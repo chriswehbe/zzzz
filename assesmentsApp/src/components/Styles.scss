@@ -1,0 +1,186 @@
+$table-background: #fff; // Table background color
+$table-border: 1px solid #ddd; // Table border color
+$table-header-background: #f2f2f2; // Table header background color
+$table-row-hover: #f5f5f5; // Row hover background color
+$button-background: #3498db; // Button background color
+$button-text: #fff; // Button text color
+$outside-button-background: #42a335; // Outside button background color
+$outside-button-text: #181515;
+$select-background: #fff; // Select background color
+$select-border: 1px solid #ddd; // Select border color
+$select-text: #333; // Select text color
+$select-hover: #f5f5f5; // Select hover background color
+$select-focus: #3498db; // Select focus border color
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: $select-text;
+  background-color: $select-background;
+  border: $select-border;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $select-hover;
+  }
+
+  &:focus {
+    border-color: $select-focus;
+  }
+}
+
+  
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: $table-background;
+  border: $table-border;
+padding: 20px;
+  th, td {
+    padding: 12px;
+    border-bottom: $table-border;
+  }
+
+  th {
+    background-color: $table-header-background;
+  }
+
+  tbody tr:hover {
+    background-color: $table-row-hover;
+  }
+
+  button {
+    background-color: $button-background;
+    color: $button-text;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+}
+.button_wrapper{
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+
+
+.outside-button {
+  background-color: $outside-button-background;
+  color: $outside-button-text;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+}
+
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Style the form container */
+  .form__wrapper {
+    width: 50vh;
+    height: 30vh;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style form labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Style form input fields */
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Style error messages */
+  .text-danger {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  /* Style the submit button */
+  button {
+    background-color: #4caf50;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+  .container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  
+.question_container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+    .heading {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .questionContainer {
+      display: flex;
+      flex-direction: column; // Display children in a column
+      border: 1px solid green;
+      margin: 5px;
+  
+      .questionHeading {
+        font-size: 18px;
+        color: #333;
+        margin: 20px;
+        text-decoration: underline;
+      }
+  
+      .questionText {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #555;
+        margin: 20px;
+      }
+  
+      .answerHeading {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 20px;
+        color: #333;
+        text-decoration: underline;
+      }
+  
+      .answerText {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #555;
+        margin: 20px;
+      }
+    }
+  }
